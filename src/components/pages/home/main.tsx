@@ -1,14 +1,15 @@
+"use client";
 import Layout from "@/components/Layout";
-import { About, News, Partners, Teams, Landing } from './sections';
+import { Details, Contact, Landing, Partners, Teams } from "./sections";
 
 export default function HomeComponent() {
   return (
     <Layout>
       <Landing />
-      <About />
-      <News />
+      <Details />
       <Partners />
       <Teams />
+      <Contact />
     </Layout>
   );
 }

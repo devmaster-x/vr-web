@@ -1,34 +1,47 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const Header: React.FC = () => {
-  return (
-    <header className="relative w-full h-[80px] bg-white shadow-md flex items-center justify-between px-10">
-      {/* Logo */}
-      <div className="py-1">
-        <Image
-          src="/assets/logo/logo.png"
-          alt="Logo"
-          width={80}
-          height={80}
-          className="object-cover w-full h-full"
-        />
-      </div>
+  const router = useRouter();
 
-      <div className="flex gap-10 items-center">
+  return (
+    <header className="w-full bg-white flex items-center justify-between px-10 py-4 fixed z-50">
+      {/* Logo */}
+      <Image
+        src="/assets/logo/logo.png"
+        alt="Voxel Rangers Logo"
+        onClick={() => router.push("/")}
+        width={150}
+        height={40}
+        className="object-contain cursor-pointer"
+      />
+
+      <div className="flex items-center gap-4">
         {/* Navigation Links */}
-        <nav className="text-[#760069] text-[16px] font-bold uppercase font-['Mplus1PBold-Bold'] leading-4 flex gap-6">
-          <Link href='#about' className="cursor-pointer hover:text-[#A1008F] transition">about</Link>
-          <Link href='#news' className="cursor-pointer hover:text-[#A1008F] transition">news</Link>
-          <Link href='/works' className="cursor-pointer hover:text-[#A1008F] transition">works</Link>
-          <Link href='#partners' className="cursor-pointer hover:text-[#A1008F] transition">partners</Link>
-          <Link href='#team' className="cursor-pointer hover:text-[#A1008F] transition">creative team</Link>
-          <Link href='/members' className="cursor-pointer hover:text-[#A1008F] transition">members</Link>
+        <nav className="flex gap-6">
+          <Link href="/#about" className="text-[#760069] uppercase font-bold text-sm hover:text-purple-300 transition cursor-pointer">ABOUT</Link>
+          <Link href="/#news" className="text-[#760069] uppercase font-bold text-sm hover:text-purple-300 transition cursor-pointer">NEWS</Link>
+          <Link href="/works" className="text-[#760069] uppercase font-bold text-sm hover:text-purple-300 transition cursor-pointer">WORKS</Link>
+          <Link href="/#partners" className="text-[#760069] uppercase font-bold text-sm hover:text-purple-300 transition cursor-pointer">PARTNERS</Link>
+          <Link href="/#teams" className="text-[#760069] uppercase font-bold text-sm hover:text-purple-300 transition cursor-pointer">CREATIVE TEAM</Link>
+          <Link href="/members" className="text-[#760069] uppercase font-bold text-sm hover:text-purple-300 transition cursor-pointer">MEMBERS</Link>
         </nav>
 
-        <Link href="/contact" className="text-white text-[16px] font-bold uppercase leading-6 bg-[#760069] px-6 py-2 rounded-sm">CONTACT</Link>
-        <button className="text-white text-[16px] font-bold uppercase leading-6 bg-black px-6 py-2 rounded-sm">JP / EN</button>
+        {/* Contact Button */}
+        <Link
+          href="#contact"
+          className="bg-[#760069] text-white px-6 py-2 uppercase font-bold text-sm cursor-pointer"
+        >
+          CONTACT
+        </Link>
+
+        {/* Language Toggle */}
+        <button className="bg-black text-white px-6 py-2 uppercase font-bold text-sm cursor-pointer">
+          JP / EN
+        </button>
       </div>
     </header>
   );

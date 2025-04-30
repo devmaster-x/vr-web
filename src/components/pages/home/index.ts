@@ -9,8 +9,6 @@ export {
 export { default as Home } from './main'
 
 export {
-    About,
-    News,
     Partners,
     Teams,
     Landing,

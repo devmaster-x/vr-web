@@ -1,16 +1,18 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer className="bg-black text-white text-center p-4">
-      <div className="py-1">
+      <div className="flex justify-center items-center">
         <Image
           src="/assets/logo/footer_logo.png"
           alt="Footer-Logo"
-          width={80}
-          height={80}
-          className="object-cover w-full h-full"
+          priority={true}
+          width={100}
+          height={100}
+          className="object-cover"
         />
       </div>
 

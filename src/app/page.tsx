@@ -1,5 +1,4 @@
-import Image from "next/image";
-import HomeComponent from "@/components/pages/home/main";
+import { Home as HomeComponent } from "@/components/pages";
 
 export default function Home() {
   return (
