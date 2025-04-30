@@ -1,7 +1,23 @@
-import React from "react";
+'use client'
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
 const Landing_video: React.FC = () => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const getFontSize = (baseSize: number) => {
+    if (width < 480) return baseSize * 0.3;
+    if (width < 768) return baseSize * 0.5;
+    if (width < 1200) return baseSize * 0.75;
+    return Math.round(baseSize);
+  };
+
   return (
     <div
       id="home"
@@ -18,14 +34,14 @@ const Landing_video: React.FC = () => {
         <div className="flex flex-col justify-center h-4/5 mx-auto">
           <div className="flex flex-col items-center">
             <h1 style={{
-              fontSize: '20rem',
+              fontSize: `${getFontSize(20)}rem`,
               margin: 0,
               fontWeight: 'bold',
               letterSpacing: '0.1rem',
-              marginBottom: '-5rem',
+              marginBottom: '-4rem',
             }}>VIDEO</h1>
             <h2 style={{
-              fontSize: '6rem',
+              fontSize: `${getFontSize(6)}rem`,
               margin: 0,
               fontWeight: 'bold',
               letterSpacing: '0.1rem',
