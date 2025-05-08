@@ -3,12 +3,21 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
 const Landing_video: React.FC = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState<number>(0);
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+
+    if (typeof window !== "undefined") {
+      setWidth(window.innerWidth); // set once on mount
+      window.addEventListener("resize", handleResize);
+    }
+
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", handleResize);
+      }
+    };
   }, []);
 
   const getFontSize = (baseSize: number) => {
