@@ -58,28 +58,11 @@ const About: React.FC = () => {
         <div className="flex flex-col w-full h-full relative py-8 gap-0">
           <div className="flex w-full h-full justify-between">
             <div id="title" className="relative w-1/2 px-4">
-              <div className="absolute top-2 left-7 w-full h-0.5 bg-black"></div>
-
-              <div className="flex justify-between items-start pt-4">
-                {["N F Tアセット制作", "アバター制作", "映像制作", "W E Bデザイン", "グラフィックデザイン"].map((item, index) => (
-                  <div key={index} className="flex flex-col items-center text-center relative px-2">
-                    <div className="absolute -top-2 -translate-x-1/2 w-0.5 h-6 bg-black"></div>
-                    <div className="absolute top-2 left-1/2 -translate-x-1/2 w-2 h-2 bg-black rounded-full"></div>
-                    <div
-                      className="text-lg mt-6 w-2 font-semibold left-1/2 -translate-x-1/2"
-                      style={{
-                        lineHeight: '1.2',
-                      }}
-                    >
-                      {item}
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <img src="assets/details/about/description.png" className="pt-4"/>
             </div>
 
             <div id="right-panel" className="flex flex-col items-center relative w-1/2">
-              <h1 className="text-4xl lg:text-7xl font-bold">ABOUT</h1>
+              <h1 className="text-4xl lg:text-6xl xl:text-7xl font-bold">ABOUT</h1>
               <div className="flex w-full justify-end relative">
                 <div className="text-lg lg:text-2xl font-semibold transform rotate-90 translate-x-[80%]" style={{
                   transformOrigin: 'left bottom',
