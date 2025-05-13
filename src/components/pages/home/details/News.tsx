@@ -14,13 +14,13 @@ const News: React.FC = () => {
       >
         <h1 className="text-4xl font-bold text-center">NEWS</h1>
         <div className="flex w-full">
-          <div className="w-1/2 lg:w-1/3 flex justify-center items-center p-4 relative">
+          <div className="hidden md:w-1/2 lg:w-1/3 md:flex justify-center items-center p-4 relative">
             <img src="/assets/details/news/toys.png" alt="Characters" className="w-full" />
             <img src="/assets/details/button.png" alt="button" className="absolute left-1/2 transform -translate-x-1/2 w-24 cursor-pointer" />
           </div>
 
-          <div className="w-2/3 flex justify-between items-center p-4 md:p-10 xl:py-20 gap-4 lg:gap-8">
-            <div className="flex flex-col w-full lg:w-1/2 max-w-[400px] justify-between h-full">
+          <div className="w-full lg:w-2/3 flex justify-center lg:justify-between items-center p-4 md:p-10 xl:py-20 gap-4 lg:gap-8">
+            <div className="flex flex-col lg:w-1/2 max-w-[400px] justify-between h-full">
               <div className="flex flex-col">
                 <p className="text-sm lg:text-md xl:text-lg mb-4 lg:mb-2 xl:mb-4 font-semibold">
                   MINTO、「ROBLOX」の事業をプロデュースを強化。第1弾として、V-ANGERSを起業し、開発支援サービスを開始

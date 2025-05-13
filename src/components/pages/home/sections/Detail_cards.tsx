@@ -2,7 +2,7 @@ import { Card } from '../details'
 
 const Detail_cards: React.FC = () => {
   return (
-    <div className="flex flex-col lg:flex-row flex-wrap justify-center mb-30">
+    <div className="flex flex-col lg:flex-row flex-wrap justify-center mb-30 lg:p-4 md:px-40 px-20">
       <Card
         title="CRYPTO CRYSTAL"
         image="/assets/details/main/crypto_crystal.png"        

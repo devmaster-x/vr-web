@@ -1,6 +1,32 @@
-import React from "react";
+'use client'
+import React, { useEffect, useState } from "react";
 
 const About: React.FC = () => {
+  const [width, setWidth] = useState<number>(0);
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+
+    if (typeof window !== "undefined") {
+      setWidth(window.innerWidth); // set once on mount
+      window.addEventListener("resize", handleResize);
+    }
+
+    return () => {
+      if (typeof window !== "undefined") {
+        window.removeEventListener("resize", handleResize);
+      }
+    };
+  }, []);
+  if(width < 800) return (
+    <div id="about" className="w-full">
+      <img 
+        src="assets/details/about/about.png"
+        alt="about image" 
+        className="w-full h-full"
+      />
+    </div>
+  )
+
   return (
     <div
       id="about"
