@@ -8,9 +8,9 @@ const Detail_cards: React.FC = () => {
         image="/assets/details/main/crypto_crystal.png"        
         description="世界初の、感覚を持つ鉱物「クリプトクリスタル」は、人間のような人格を持ちながら、ペットのように愛らしく、DNAの重複がないため1つ1つがユニークな存在のNFTプロジェクトです。"
         links={[
-          { label: "opensea", url: "#" },
-          { label: "discord", url: "#" },
-          { label: "x", url: "#" },
+          { label: "opensea", url: "https://opensea.io/collection/cryptocrystal" },
+          { label: "discord", url: "https://discord.com/invite/UUDYg7btXx" },
+          { label: "x", url: "https://mobile.twitter.com/_cryptocrystal" },
         ]}
       />
       <Card
@@ -18,7 +18,7 @@ const Detail_cards: React.FC = () => {
         image="/assets/details/main/pippi_verse.png"        
         description="スーパークリプトマンは、日本のクリプトバースで流行した3DステッカーアートのNFTを、様々な影響力のあるアーティストが作成したコレクションです。"
         links={[
-          { label: "opensea", url: "#" },
+          { label: "opensea", url: "https://opensea.io/collection/super-crypto-man" },
           { label: "video01", url: "#" },
           { label: "x", url: "#" },
         ]}
@@ -28,9 +28,9 @@ const Detail_cards: React.FC = () => {
         image="/assets/details/main/minto_land.png"        
         description="株式会社Mintoでは、Webやマンガなどのキャラクターコンテンツをクリエイター集団とともに制作・プロデュースしています。2018年よりブロックチェーン業界に参入し、オリジナルのフルオンチェーンNFTゲームプロジェクト「Crypto Crystal」をリリース、The Sandboxにて「Minto LAND」を開発するなど、積極的に活動しています。"
         links={[
-          { label: "video01", url: "#" },
-          { label: "video02", url: "#" },
-          { label: "x", url: "#" },
+          { label: "video01", url: "https://www.youtube.com/watch?v=YLIcJCKO338&themeRefresh=1" },
+          { label: "video02", url: "https://www.youtube.com/watch?v=LErpXdR5uG4" },
+          { label: "website", url: "https://www.sandbox.game/jp/quan/" },
         ]}
       />
     </div>
