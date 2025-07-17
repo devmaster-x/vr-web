@@ -30,7 +30,7 @@ const Works: React.FC = () => {
                 // If workItem.image is the full path, just use that:
                 // image={workItem.image}
                 // If it's just a filename:
-                image={getWorkImagePath(workItem.image.split('/').pop() || 'placeholder.png')} // Example: extract filename
+                image={getWorkImagePath(workItem.id)} // Example: extract filename
               />
             ))}
           </div>

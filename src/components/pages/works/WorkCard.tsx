@@ -15,7 +15,7 @@ const WorkCard: React.FC<WorkCardProps> = ({ category, title, description, image
       <div className="w-full bg-gray-700 relative" style={{
         aspectRatio: "3/2",
       }}>
-        {/* <Image src={image} alt={title} layout="fill" objectFit="cover" /> */}
+        <Image src={image} alt={title} layout="fill" objectFit="cover" />
       </div>
 
       <div className="bg-black p-4 text-white">
