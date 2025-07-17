@@ -76,7 +76,7 @@ const About: React.FC = () => {
 
           <div className="flex justify-center items-center -mt-4 lg:-mt-10 xl:-mt-16 2xl:-mt-52">
             <img src="assets/details/about/toys.png" alt="Toys" className="w-[90%]" />
-            <img src="assets/details/button.png" alt="Button" className="absolute w-32 cursor-pointer" />
+            {/* <img src="assets/details/button.png" alt="Button" className="absolute w-32 cursor-pointer" /> */}
           </div>
         </div>
 

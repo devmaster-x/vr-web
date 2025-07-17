@@ -27,7 +27,7 @@ const MemberCard: React.FC<MemberCardProps> = ({ name, image, links }) => {
 
       <h3 className="text-lg font-bold mb-3 text-white text-center">{name}</h3>
 
-      <div className="grid grid-cols-2 text-center gap-2 w-full">
+      {/* <div className="grid grid-cols-2 text-center gap-2 w-full">
         {validLinks.map(([label, url]) => (
           <Link key={label} href={url} passHref legacyBehavior>
             <a
@@ -39,7 +39,7 @@ const MemberCard: React.FC<MemberCardProps> = ({ name, image, links }) => {
             </a>
           </Link>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
