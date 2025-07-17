@@ -34,7 +34,7 @@ const Works: React.FC = () => {
 
   return (
     <div className="text-black p-8">
-      <h1 className="text-5xl font-bold text-center mb-10 text-white">WORKS</h1>
+      {/* <h1 className="text-5xl font-bold text-center mb-10 text-white">WORKS</h1> */}
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {width < 1024 

@@ -26,12 +26,12 @@ const Landing_graphic: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center">
-          <Link
+          {/* <Link
             href="/works"
             className="mt-4 px-12 py-3 border-2 border-[#0468b2] bg-[#222668] rounded-md text-white uppercase font-bold tracking-wider cursor-pointer relative z-10"
           >
             WORKS
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
