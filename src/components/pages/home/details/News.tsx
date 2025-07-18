@@ -3,7 +3,8 @@ import React from "react";
 const News: React.FC = () => {
   return (
     <div id="news" className="text-white">
-      <div
+        <h1 className="text-4xl font-bold text-center ">NEWS</h1>
+        <div
         className="flex flex-col items-center"
         style={{
           backgroundImage: 'url("/assets/details/news/background_image.png")',
@@ -12,11 +13,10 @@ const News: React.FC = () => {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <h1 className="text-4xl font-bold text-center">NEWS</h1>
-        <div className="flex w-full">
+        <div className="flex w-full p-4">
           <div className="hidden md:w-1/2 lg:w-1/3 md:flex justify-center items-center p-4 relative">
             <img src="/assets/details/news/toys.png" alt="Characters" className="w-full" />
-            <img src="/assets/details/button.png" alt="button" className="absolute left-1/2 transform -translate-x-1/2 w-24 cursor-pointer" />
+            {/* <img src="/assets/details/button.png" alt="button" className="absolute left-1/2 transform -translate-x-1/2 w-24 cursor-pointer" /> */}
           </div>
 
           <div className="w-full lg:w-2/3 flex justify-center lg:justify-between items-center p-4 md:p-10 xl:py-20 gap-4 lg:gap-8">

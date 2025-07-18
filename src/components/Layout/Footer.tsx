@@ -16,7 +16,7 @@ const Footer = () => {
         />
       </div>
 
-      <p>© 2025 V-RANGERS PTE. LTD.</p>
+      <p className="mt-4">© 2025 V-RANGERS PTE. LTD.</p>
     </footer>
   );
 };
