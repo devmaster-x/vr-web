@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { BarsIcon } from "./BarsIcon"; // You must provide this component
 import { TimesIcon } from "./TimesIcon"; // You must provide this component
+import { scrollToSection } from "@/lib/scrollUtils";
 
 const navLinks = [
   { href: "/#about", label: "ABOUT" },
@@ -44,23 +45,36 @@ const Header: React.FC = () => {
       {/* Nav links and actions (hidden on mobile) */}
       <div className="flex items-center gap-4">
         <nav className="hidden md:flex gap-6">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-[#760069] uppercase font-bold min-w-fit text-sm hover:text-purple-300 transition cursor-pointer"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isHashLink = link.href.startsWith('/#');
+            const elementId = isHashLink ? link.href.substring(2) : null;
+            
+            return isHashLink ? (
+              <button
+                key={link.href}
+                onClick={() => scrollToSection(elementId!)}
+                className="text-[#760069] uppercase font-bold min-w-fit text-sm hover:text-purple-300 transition cursor-pointer"
+              >
+                {link.label}
+              </button>
+            ) : (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-[#760069] uppercase font-bold min-w-fit text-sm hover:text-purple-300 transition cursor-pointer"
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
         {/* CONTACT and JP/EN buttons are now always visible */}
-        <Link
-          href="#contact"
+        <button
+          onClick={() => scrollToSection('contact')}
           className="bg-[#760069] text-white px-6 py-2 uppercase font-bold min-w-fit text-sm cursor-pointer"
         >
           CONTACT
-        </Link>
+        </button>
         <button className="bg-black text-white px-6 py-2 uppercase font-bold min-w-fit text-sm cursor-pointer">
           JP / EN
         </button>
@@ -81,23 +95,41 @@ const Header: React.FC = () => {
     </div>
     {/* Navigation links */}
     <nav className="flex flex-col gap-6 text-lg px-6">
-      {navLinks.map((link) => (
-        <Link
-          key={link.href}
-          href={link.href}
-          onClick={() => setShowNav(false)}
-          className="hover:text-purple-300 transition"
-        >
-          {link.label}
-        </Link>
-      ))}
-      <Link
-        href="#contact"
-        onClick={() => setShowNav(false)}
+      {navLinks.map((link) => {
+        const isHashLink = link.href.startsWith('/#');
+        const elementId = isHashLink ? link.href.substring(2) : null;
+        
+        return isHashLink ? (
+          <button
+            key={link.href}
+            onClick={() => {
+              scrollToSection(elementId!);
+              setShowNav(false);
+            }}
+            className="hover:text-purple-300 transition text-left"
+          >
+            {link.label}
+          </button>
+        ) : (
+          <Link
+            key={link.href}
+            href={link.href}
+            onClick={() => setShowNav(false)}
+            className="hover:text-purple-300 transition"
+          >
+            {link.label}
+          </Link>
+        );
+      })}
+      <button
+        onClick={() => {
+          scrollToSection('contact');
+          setShowNav(false);
+        }}
         className="bg-[#760069] text-white px-4 py-2 rounded uppercase font-bold w-fit text-sm cursor-pointer mt-4"
       >
         CONTACT
-      </Link>
+      </button>
       <button className="bg-black text-white px-4 py-2 rounded uppercase font-bold w-fit text-sm cursor-pointer mt-2">
         JP / EN
       </button>

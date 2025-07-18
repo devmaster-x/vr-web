@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { FaArrowUp } from "react-icons/fa";
+import { scrollToSection } from "@/lib/scrollUtils";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -28,6 +29,20 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     return () => {
       window.removeEventListener("scroll", checkScrollTop);
     };
+  }, []);
+
+  // Handle hash navigation on page load
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash;
+      if (hash) {
+        const elementId = hash.substring(1);
+        // Longer delay to ensure DOM is fully ready, especially when navigating from other pages
+        setTimeout(() => {
+          scrollToSection(elementId);
+        }, 300);
+      }
+    }
   }, []);
 
   return (

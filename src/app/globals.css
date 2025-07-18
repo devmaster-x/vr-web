@@ -27,3 +27,13 @@ body {
   color: var(--foreground);
   font-family: Hiragino Kaku Gothic Pro, ヒラギノ角ゴ Pro W3, Meiryo, メイリオ, Osaka, MS PGothic, ＭＳ Ｐゴシック, sans-serif
 }
+
+/* Scroll margin for sections to account for fixed header */
+#about,
+#news,
+#partners,
+#teams,
+#contact {
+  scroll-margin-top: 80px; /* Fallback */
+  scroll-margin-top: calc(var(--header-height, 80px) + 10px);
+}
