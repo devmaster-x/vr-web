@@ -19,8 +19,6 @@ const Detail_cards: React.FC = () => {
         description="スーパークリプトマンは、日本のクリプトバースで流行した3DステッカーアートのNFTを、様々な影響力のあるアーティストが作成したコレクションです。"
         links={[
           { label: "opensea", url: "https://opensea.io/collection/super-crypto-man" },
-          { label: "video01", url: "#" },
-          { label: "x", url: "#" },
         ]}
       />
       <Card

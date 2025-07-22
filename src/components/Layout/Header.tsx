@@ -10,10 +10,10 @@ import { scrollToSection } from "@/lib/scrollUtils";
 const navLinks = [
   { href: "/#about", label: "ABOUT" },
   { href: "/#news", label: "NEWS" },
-  { href: "/works", label: "WORKS" },
+  // { href: "/works", label: "WORKS" },
   { href: "/#partners", label: "PARTNERS" },
   { href: "/#teams", label: "CREATIVE TEAM" },
-  { href: "/members", label: "MEMBERS" },
+  // { href: "/members", label: "MEMBERS" },
 ];
 
 const Header: React.FC = () => {
