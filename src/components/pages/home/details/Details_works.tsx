@@ -19,10 +19,10 @@ const Works: React.FC = () => {
   }, []);
 
   const web_images = [
-    "/assets/details/works/web/graphic.png",
+    "/assets/details/works/web/graphic-1.png",
     "/assets/details/works/web/web.png",
-    "/assets/details/works/web/voxel.png",
-    "/assets/details/works/web/video.png",
+    "/assets/details/works/web/voxel-1.png",
+    "/assets/details/works/web/video-1.png",
   ];
 
   const mobile_images = [
