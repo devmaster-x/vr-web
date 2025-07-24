@@ -1,28 +1,12 @@
 'use client'
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const Works: React.FC = () => {
-  const [width, setWidth] = useState<number>(0);
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-
-    if (typeof window !== "undefined") {
-      setWidth(window.innerWidth); // set once on mount
-      window.addEventListener("resize", handleResize);
-    }
-
-    return () => {
-      if (typeof window !== "undefined") {
-        window.removeEventListener("resize", handleResize);
-      }
-    };
-  }, []);
-
   const web_images = [
-    "/assets/details/works/web/graphic-1.png",
+    "/assets/details/works/web/graphic.png",
     "/assets/details/works/web/web.png",
-    "/assets/details/works/web/voxel-1.png",
-    "/assets/details/works/web/video-1.png",
+    "/assets/details/works/web/voxel.png",
+    "/assets/details/works/web/video.png",
   ];
 
   const mobile_images = [
@@ -33,14 +17,31 @@ const Works: React.FC = () => {
   ];
 
   return (
-    <div className="text-black p-8">
+    <div className="text-black p-2 md:p-4">
       {/* <h1 className="text-5xl font-bold text-center mb-10 text-white">WORKS</h1> */}
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {width < 1024 
-          ? mobile_images.map((images, index) => <img src={images} key={index} alt={`design image ${index}`} className="w-full h-full"/>) 
-          : web_images.map((images, index) => <img src={images} key={index} alt={`design image ${index}`} className="w-full h-full"/>) 
-        }
+      {/* Mobile images (visible on small screens) - Single column */}
+      <div className="md:hidden">
+        {mobile_images.map((images, index) => (
+          <img 
+            src={images} 
+            key={index} 
+            alt={`design image ${index}`} 
+            className="w-full h-auto mb-2 md:mb-4"
+          />
+        ))}
+      </div>
+      
+      {/* Desktop images (visible on large screens) - 2 columns */}
+      <div className="hidden md:grid md:grid-cols-2 gap-4 lg:gap-8">
+        {web_images.map((images, index) => (
+          <img 
+            src={images} 
+            key={index} 
+            alt={`design image ${index}`} 
+            className="w-full h-auto"
+          />
+        ))}
       </div>
     </div>
   );

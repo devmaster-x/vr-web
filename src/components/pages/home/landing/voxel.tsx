@@ -15,7 +15,12 @@ const Landing_voxel: React.FC = () => {
         zIndex: 1,
       }}
     >
-      <div className="flex flex-col justify-center h-4/5"></div>
+      <div className="flex flex-col justify-center h-4/5 px-4">
+        <div className="flex flex-col items-center text-center text-white">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4">VOXEL</h1>
+          <p className="text-lg sm:text-xl md:text-2xl xl:text-3xl">3Dアートの世界へ</p>
+        </div>
+      </div>
       <div className="flex flex-col items-center justify-center">
         {/* <Link
           href="/works"

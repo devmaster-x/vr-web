@@ -4,19 +4,19 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white text-center p-4">
+    <footer className="bg-black text-white text-center p-4 md:p-6">
       <div className="flex justify-center items-center">
         <Image
           src="/assets/logo/footer_logo.png"
           alt="Footer-Logo"
           priority={true}
-          width={100}
-          height={100}
-          className="object-cover"
+          width={80}
+          height={80}
+          className="object-cover md:w-[100px] md:h-[100px]"
         />
       </div>
 
-      <p className="mt-4">© 2025 V-RANGERS PTE. LTD.</p>
+      <p className="mt-4 text-sm md:text-base">© 2025 V-RANGERS PTE. LTD.</p>
     </footer>
   );
 };

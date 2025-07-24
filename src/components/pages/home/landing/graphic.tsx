@@ -16,13 +16,15 @@ const Landing_graphic: React.FC = () => {
       }}
     >
       <div className="absolute inset-0 flex flex-col text-white">
-        <div className="flex flex-col justify-center h-4/5 w-1/2">
-          <div className="flex flex-col items-center">
-            <h1 className="text-6xl xl:text-8xl font-bold pt-32">GRAPHIC</h1>
-            <h1 className="text-6xl xl:text-8xl font-bold pl-24 pb-6">DESIGN</h1>
-            <p className="mt-4 text-2xl xl:text-4xl">他にはない、</p>
-            <p className="mt-4 text-2xl xl:text-4xl pl-4">ユニークな</p>
-            <p className="mt-4 text-2xl xl:text-4xl pl-20">デザインを。</p>
+        <div className="flex flex-col justify-center h-4/5 w-full md:w-1/2 px-4 md:px-0">
+          <div className="flex flex-col items-center md:items-start">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold pt-16 md:pt-32 text-center md:text-left">GRAPHIC</h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold pb-6 text-center md:text-left md:pl-24">DESIGN</h1>
+            <div className="text-center md:text-left">
+              <p className="mt-4 text-lg sm:text-xl md:text-2xl xl:text-4xl">他にはない、</p>
+              <p className="mt-4 text-lg sm:text-xl md:text-2xl xl:text-4xl md:pl-4">ユニークな</p>
+              <p className="mt-4 text-lg sm:text-xl md:text-2xl xl:text-4xl md:pl-20">デザインを。</p>
+            </div>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center">

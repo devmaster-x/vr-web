@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
 @import "tailwindcss";
 
 :root {
@@ -25,7 +24,10 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Hiragino Kaku Gothic Pro, ヒラギノ角ゴ Pro W3, Meiryo, メイリオ, Osaka, MS PGothic, ＭＳ Ｐゴシック, sans-serif
+  font-family: Hiragino Kaku Gothic Pro, ヒラギノ角ゴ Pro W3, Meiryo, メイリオ, Osaka, MS PGothic, ＭＳ Ｐゴシック, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* Scroll margin for sections to account for fixed header */
@@ -36,4 +38,38 @@ body {
 #contact {
   scroll-margin-top: 80px; /* Fallback */
   scroll-margin-top: calc(var(--header-height, 80px) + 10px);
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 768px) {
+  #about,
+  #news,
+  #partners,
+  #teams,
+  #contact {
+    scroll-margin-top: 70px;
+  }
+  
+  /* Improve touch targets on mobile */
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Prevent horizontal scroll on mobile */
+  * {
+    max-width: 100%;
+  }
+}
+
+/* Smooth scrolling for better UX */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Improve focus states for accessibility */
+button:focus,
+a:focus {
+  outline: 2px solid #760069;
+  outline-offset: 2px;
 }

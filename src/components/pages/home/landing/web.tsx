@@ -16,10 +16,10 @@ const Landing_web: React.FC = () => {
       }}
     >
       <div className="absolute inset-0 flex flex-col text-white">
-        <div className="flex flex-col justify-center h-4/5 mx-auto">
-          <div className="flex flex-col items-center">
-            <h1 className="text-8xl xl:text-9xl font-bold pt-32 pb-4">WEB DESIGN</h1>
-            <p className="text-2xl xl:text-4xl font-bold">あなたのブランドを引き立す</p>
+        <div className="flex flex-col justify-center h-4/5 mx-auto px-4">
+          <div className="flex flex-col items-center text-center">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold pt-16 md:pt-32 pb-4">WEB DESIGN</h1>
+            <p className="text-lg sm:text-xl md:text-2xl xl:text-4xl font-bold">あなたのブランドを引き立す</p>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center">
