@@ -10,7 +10,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, image, description, links }) => {
   return (
-    <div className="flex flex-col justify-between border p-4 md:p-6 m-2 md:m-4 text-center bg-white w-full mx-auto lg:max-w-1/4 rounded-lg shadow-sm">
+    <div className="flex flex-col justify-between border p-4 md:p-6 m-2 md:m-4 text-center bg-white w-full mx-auto min-w-[300px] lg:max-w-1/4 rounded-lg shadow-sm">
       <div className="flex flex-col text-left">
         <h3 className="text-lg md:text-xl font-bold mb-2 text-[#760069]">{title}</h3>
         <img src={image} alt={title} className="w-full h-auto mb-4 rounded" />

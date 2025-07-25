@@ -2,7 +2,7 @@ import { Card } from '../details'
 
 const Detail_cards: React.FC = () => {
   return (
-    <div className="flex flex-col lg:flex-row flex-wrap justify-center mb-20 md:mb-30 p-4 md:p-8 lg:p-4 md:px-10 lg:px-20">
+    <div className="flex flex-col lg:flex-row flex-wrap justify-center mb-20 md:mb-30 p-4 md:p-8">
       <Card
         title="CRYPTO CRYSTAL"
         image="/assets/details/main/crypto_crystal.png"        
@@ -24,10 +24,10 @@ const Detail_cards: React.FC = () => {
       <Card
         title="MINTO LAND"
         image="/assets/details/main/minto_land.png"        
-        description="株式会社Mintoでは、Webやマンガなどのキャラクターコンテンツをクリエイター集団とともに制作・プロデュースしています。2018年よりブロックチェーン業界に参入し、オリジナルのフルオンチェーンNFTゲームプロジェクト「Crypto Crystal」をリリース、The Sandboxにて「Minto LAND」を開発するなど、積極的に活動しています。"
+        description="株式会社Mintoでは、Webやマンガなどのキャラクターコンテンツをクリエイター集団とともに制作・プロデュースしています。The Sandboxにて「Minto LAND」を開発するなど、積極的に活動しています。"
         links={[
-          { label: "video01", url: "https://www.youtube.com/watch?v=YLIcJCKO338&themeRefresh=1" },
-          { label: "video02", url: "https://www.youtube.com/watch?v=LErpXdR5uG4" },
+          { label: "video 1", url: "https://www.youtube.com/watch?v=YLIcJCKO338&themeRefresh=1" },
+          { label: "video 2", url: "https://www.youtube.com/watch?v=LErpXdR5uG4" },
           { label: "website", url: "https://www.sandbox.game/jp/quan/" },
         ]}
       />
