@@ -16,8 +16,8 @@ const Landing_graphic: React.FC = () => {
       }}
     >
       <div className="absolute inset-0 flex flex-col text-white">
-        <div className="flex flex-col justify-center h-4/5 w-full md:w-1/2 px-4 md:px-0">
-          <div className="flex flex-col items-center md:items-start">
+        <div className="flex flex-col justify-center h-4/5 w-full md:w-1/2">
+          <div className="flex flex-col items-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold pt-16 md:pt-32 text-center md:text-left">GRAPHIC</h1>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold pb-6 text-center md:text-left md:pl-24">DESIGN</h1>
             <div className="text-center md:text-left">

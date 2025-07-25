@@ -16,7 +16,7 @@ const Landing_main: React.FC = () => {
       <div className="flex flex-col items-center justify-center h-4/5 px-4">
         <div className="relative flex flex-col sm:flex-row items-center justify-center text-center sm:text-left sm:pl-4 md:pl-14">
           {/* VOXEL text */}
-          <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-0 sm:mr-4 md:mr-8">VOXEL</h1>
+          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-0 sm:mr-4 md:mr-8">VOXEL</h1>
 
           {/* VA Logo */}
           <div className="relative mb-4 sm:mb-0" style={{ width: '60vw', height: '30vh', maxWidth: '300px', maxHeight: '200px' }}>
@@ -30,7 +30,7 @@ const Landing_main: React.FC = () => {
           </div>
 
           {/* RANGERS text */}
-          <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold sm:ml-4 md:ml-8">RANGERS</h1>
+          <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold sm:ml-4 md:ml-8">RANGERS</h1>
         </div>
       </div>
       {/* Members button */}

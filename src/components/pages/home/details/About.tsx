@@ -52,7 +52,7 @@ const About: React.FC = () => {
           <p>また、3Dアートやアニメーション、エクスペリエンスデザイン、アバター制作、NFTアセット制作など、メタバース空間の分野でも活動しています。</p>
         </div>
 
-        <h2 className="text-xl md:text-2xl font-bold pt-4 md:pt-6">VOXEL RANGERS</h2>
+        {/* <h2 className="text-xl md:text-2xl font-bold pt-4 md:pt-6">VOXEL RANGERS</h2> */}
       </div>
 
       <div className="flex w-full lg:w-1/2 h-full">

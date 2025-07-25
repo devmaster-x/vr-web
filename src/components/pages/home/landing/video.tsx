@@ -18,7 +18,7 @@ const Landing_video: React.FC = () => {
       <div className="absolute inset-0 flex flex-col text-white">
         <div className="flex flex-col justify-center h-4/5 mx-auto px-4">
           <div className="flex flex-col items-center text-center">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold mb-0 md:-mb-16 tracking-wide">VIDEO</h1>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold tracking-wide">VIDEO</h1>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-wide">PRODUCTION</h2>
           </div>
         </div>

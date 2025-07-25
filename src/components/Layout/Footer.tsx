@@ -12,7 +12,7 @@ const Footer = () => {
           priority={true}
           width={80}
           height={80}
-          className="object-cover md:w-[100px] md:h-[100px]"
+          className="object-cover"
         />
       </div>
 

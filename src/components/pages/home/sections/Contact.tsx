@@ -13,11 +13,12 @@ const Contact: React.FC = () => {
   useEffect(() => {
     const updateIframeHeight = () => {
       if (window.innerWidth < 768) {
-        setIframeHeight(700); // Taller height for mobile to show all content
+        // Mobile uses custom form, no iframe needed
+        setIframeHeight(650); // Default height for desktop
       } else if (window.innerWidth < 1024) {
         setIframeHeight(600); // Medium height for tablet
       } else {
-        setIframeHeight(600); // Full height for desktop
+        setIframeHeight(650); // Full height for desktop
       }
     };
 
