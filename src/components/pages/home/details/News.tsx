@@ -16,7 +16,7 @@ const News: React.FC = () => {
         <div className="flex flex-col lg:flex-row w-full p-4 md:p-6">
           {/* Toys Image - Now visible on all screens */}
           <div className="flex w-full lg:w-1/2 xl:w-1/3 justify-center items-center p-4 relative mb-6 lg:mb-0">
-            <img src="/assets/details/news/toys.png" alt="Characters" className="w-full max-w-xs md:max-w-md" />
+            <img src="/assets/details/news/toys.png" alt="Characters" className="w-full max-w-xs hidden md:block md:max-w-md" />
             {/* <img src="/assets/details/button.png" alt="button" className="absolute left-1/2 transform -translate-x-1/2 w-24 cursor-pointer" /> */}
           </div>
 
