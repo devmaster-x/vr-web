@@ -86,7 +86,7 @@ const Contact: React.FC = () => {
               <span>）からどうぞ。</span>
             </p>
             <p className="text-xs md:text-sm">
-              Voxel Rangersでは、ボクセルおよびゲームクリエイターを募集中です。
+              Voxel Rangersでは、ボクセルおよびゲームクリエイターを募集中です。<br/>
               ポートフォリオのURLを添えて、ぜひご応募ください。
             </p>
           </div>
