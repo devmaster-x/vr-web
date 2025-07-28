@@ -8,7 +8,7 @@ const Landing_video: React.FC = () => {
       id="home"
       className="relative w-full h-full"
       style={{
-        backgroundImage: 'url(/assets/landing/video/main.png)',
+        backgroundImage: 'url(/assets/landing/video/updated_video.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
