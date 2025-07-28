@@ -77,16 +77,17 @@ const Contact: React.FC = () => {
           
           {/* Contact Message */}
           <div className="mt-6 md:mt-8">
-            <p className="mb-4 text-sm md:text-base">私たちとコラボレーションをしたい方、お話をしたいという方は、お気軽にご連絡ください。</p>
+            <p className="mb-4 text-sm md:text-base">コラボやお話をご希望の方は、お気軽にご連絡ください。</p>
             <p className="mb-4 text-sm md:text-base">
-              <span>お問い合せ または </span>
+              <span>フォームまたはX（旧 </span>
               <a href="https://twitter.com/voxelrangers" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-100 underline">
                 Twitter
               </a>
+              <span>）からどうぞ。</span>
             </p>
             <p className="text-xs md:text-sm">
-              VoxelRangersでは、ボクセルクリエイター、ゲームクリエイターを募集しています。<br />
-              お問い合わせページより、ご自身のことがわかるポートフォリオが見られるURLを添えて、メッセージをお送りください。
+              Voxel Rangersでは、ボクセルおよびゲームクリエイターを募集中です。
+              ポートフォリオのURLを添えて、ぜひご応募ください。
             </p>
           </div>
         </div>

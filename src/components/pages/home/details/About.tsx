@@ -41,10 +41,14 @@ const About: React.FC = () => {
     >
       <div className="flex flex-col justify-between w-full lg:w-1/2 p-4 md:p-5 gap-4">
         <div className="relative mb-5 flex justify-center">
-          <video className="w-full max-w-md xl:w-4/5" controls>
-            <source src="path/to/your/video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <iframe 
+            className="w-full max-w-md xl:w-4/5 aspect-video"
+            src="https://www.youtube.com/embed/LiAPuN_d7j0"
+            title="VOXEL RANGERS Video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
         </div>
 
         <div className="flex flex-col gap-2 text-sm md:text-base lg:text-lg font-semibold">
